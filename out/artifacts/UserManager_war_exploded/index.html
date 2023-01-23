@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>首页</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#tips").click(function () {
+          alert("请先登录！")
+
+        })
+
+       })
+    </script>
+    <script>
+      function text() {
+        alert("请先登录！");
+
+      }
+    </script>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">用户管理系统</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="login.jsp">登录</a></li>
+          <li><a href="javascript:;" id="tips">添加用户</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              系统简介
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">jmeter</a></li>
+              <li><a href="#">EJB</a></li>
+              <li><a href="#">Jasper Report</a></li>
+              <li class="divider"></li>
+              <li><a href="#">联系我们</a></li>
+              <li class="divider"></li>
+              <li><a href="#">公司地址</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+      </div>
+          <button type="submit"  onclick="text()" class="btn btn-primary">查询</button>
+        </form>
+
+        <button style="float: right" type="button" class="btn btn-primary btn-lg" onclick='location.href=("login.jsp")'>
+          <span class="glyphicon glyphicon-user"></span> User
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <div align="center">
+  	<a
+	  href="list.html" style="text-decoration:none;font-size:33px">查询所有用户信息
+	</a>
+  </div>
+  <div align="center">
+    <p><h3 style="color: #a94442">黄天次</h3></p>
+     <span><h1>欢迎您！</h1></span>
+
+  </div>
+
+
+
+  </body>
+</html>
